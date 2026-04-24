@@ -18,3 +18,15 @@ logging.basicConfig(
 
 #初始化工具：当前时间工具
 class GetTimeTool(BaseTool):
+    def run(self,params:dict)->str:
+        logging.info("调用当前时间工具")
+        now=datetime.datetime.now()
+        return now.strftime("当前时间是：%Y年%m月%d日 %H:%M:%S")
+
+@property
+def desccription(self):
+    return "获取当前系统时间"
+
+@property
+def parameters(self):
+    return{"type":"object","properties":{}}
