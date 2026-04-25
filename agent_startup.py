@@ -57,7 +57,7 @@ def build_agent() -> Assistant:
 
     llm_config = {
         "model": "qwen-turbo",
-        "api_key": api_key,
+        #"api_key": api_key,#这两个apikey和url都可以不要
         #"base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
         "temperature": 0.2
     }
