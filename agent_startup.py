@@ -85,7 +85,7 @@ def get_full_response(agent, prompt):
     
     # 从结果里找 function 的返回值（你要的文字）
     for item in full_response:
-        if item.get("role") == "function":#这里的还可以改成助手
+        if item.get("role") == "function":#这里根据需要还可以改成助手assistant
             return item["content"]
     return ""
 
